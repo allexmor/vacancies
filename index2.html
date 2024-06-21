@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+	.default {
+		cursor: pointer;
+	}
+
+	.bx-ilike-plus-one-custom {
+		animation: bx-like 0.5s;
+	}
+
+	.no-like {
+		animation: bx-unlike 0.5s;
+	}
+
+	@keyframes bx-like {
+		50% {
+			font-size: 18px;
+		}
+	}
+
+	@keyframes bx-unlike {
+		50% {
+			font-size: 18px;
+		}
+	}
+</style>
+
+<body>
+	<div class="default">text</div>
+</body>
+<script>
+	document.querySelector('.default').addEventListener('click', (event) => {
+		console.log(event.target);
+		var _this = event.target;
+		if (_this.classList.contains('bx-ilike-plus-one-custom')) {
+			_this.classList.remove('bx-ilike-plus-one-custom');
+			_this.classList.add('no-like');
+		} else {
+
+			_this.classList.remove('no-like');
+			_this.classList.add('bx-ilike-plus-one-custom');
+		}
+	})
+
+</script>
+
+</html>
