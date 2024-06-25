@@ -559,7 +559,6 @@ h2{
 	border: 1px solid #000;
 	opacity: 0;
 	
-	
 	pointer-events: none;
 }
 
@@ -723,6 +722,21 @@ h2{
 		width:2300px;
 	}
 } */
+.form form{
+	display: flex;
+	margin-top: 40px;
+	flex-wrap: wrap;
+	gap: 24px;
+}
+.form input[type="text"]{
+	width:calc(50% - 12px);
+	padding: 18px 12px;
+	border-radius: 7px;
+	border:0px;
+	background-color: #F3F4F7;
+}
+
+
 
 @media (max-width:1599px) {
 	.gallery__wrapper {
@@ -730,7 +744,7 @@ h2{
 	}
 
 	.gallery__item:nth-child(8n+1) {
-		margin-left: 18.5vw;
+		margin-left: 17.5vw;
 	}
 
 	.gallery__item:nth-child(8n+5) {

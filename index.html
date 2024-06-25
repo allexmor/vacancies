@@ -19,11 +19,11 @@
 				<div class="navigation__burger-line"></div>
 			</div>
 			<ul>
-				<li><a href="#about">О нас</a></li>
-				<li><a href="#advantages">Наши ценности</a></li>
-				<li><a href="#vacancies">Вакансии</a></li>
-				<li><a href="#reviews">Отзывы</a></li>
-				<li><a href="#footer">Контакты</a></li>
+				<li><a href="#about" class="link">О нас</a></li>
+				<li><a href="#advantages" class="link">Наши ценности</a></li>
+				<li><a href="#vacancies" class="link">Вакансии</a></li>
+				<li><a href="#reviews" class="link">Отзывы</a></li>
+				<li><a href="#footer" class="link">Контакты</a></li>
 			</ul>
 		</nav>
 		<div class="social">
@@ -36,8 +36,8 @@
 			<div class="banner-left">
 				<h1>Построй карьеру в ТРАНСКЕМИКЛ-экспресс</h1>
 				<div class="banner__buttons">
-					<a href="#" class="btn btn--blue">Вакансии</a>
-					<a href="#" class="btn">Хочу в команду</a>
+					<a href="#vacancies" class="btn btn--blue">Вакансии</a>
+					<a href="#feedback" class="btn">Хочу в команду</a>
 				</div>
 			</div>
 			<div class="banner-right">
@@ -187,7 +187,7 @@
 			<div class="gallery__bottom">
 				<div class="gallery__show-more"><span class="active">Показать еще</span><span>Свернуть</span></div>
 				<h3>Давай работать вместе?</h3>
-				<a href="#" class="btn btn--green">Хочу в команду</a>
+				<a href="#feedback" class="btn btn--green link">Хочу в команду</a>
 			</div>
 		</section>
 		<section class="clients">
@@ -275,9 +275,15 @@
 				</div>
 			</div>
 		</section>
-		<section class="form">
+		<section class="form" id="feedback">
 			<h2>Заполните информацию</h2>
-
+			<form>
+				<input type="text" name="name" placeholder="имя" />
+				<input type="text" name="sername" placeholder="фамилия" />
+				<input type="text" name="telephone" placeholder="телефон" />
+				<input type="text" name="email" placeholder="email" />
+				<input type="text" name="vacancy" placeholder="желаемая вакансия" />
+			</form>
 		</section>
 		<section class="telegram">
 			<div class="telegram__image">

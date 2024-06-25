@@ -15,8 +15,24 @@ document.addEventListener("DOMContentLoaded", function () {
     .querySelector(".navigation--top ul")
     .addEventListener("click", function (e) {
       e.preventDefault();
-      console.log(e.target);
-      id = e.target.getAttribute("href");
+
+      if (!e.target.classList.contains("link")) return;
+
+      const id = e.target.getAttribute("href");
+      document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+    });
+
+  document
+    .querySelector(".banner__buttons")
+    .addEventListener("click", function (e) {
+      e.preventDefault();
+
+      const targetBtn = e.target;
+      if (!targetBtn.classList.contains("btn")) return;
+
+      const id = targetBtn.getAttribute("href");
+      console.log(id);
+
       document.querySelector(id).scrollIntoView({ behavior: "smooth" });
     });
 
@@ -34,6 +50,16 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+  document
+    .querySelector(".gallery__bottom a")
+    .addEventListener("click", function (e) {
+      e.preventDefault();
+      console.log(e, e.target);
+      const id = e.target.getAttribute("href");
+
+      document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+    });
 
   function closeVacancies() {
     vacanciesHeader.forEach((vacancyHeader) => {
